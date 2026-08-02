@@ -724,13 +724,24 @@ label .grupo-opciones {
 .formulario textarea {
   background-color: var(--color-0);
   border: none;
-  
+   font-family: Arial, Helvetica, sans-serif;
   padding: 0.8rem;
   font-size: 1rem;
   color: #a3a49d;
   width: 90%;
   margin: auto;
   box-sizing: border-box;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder,
+.formulario select {
+  font-family: inherit;
+}
+
+.formulario textarea::placeholder {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 .formulario input:focus,
 .formulario select:focus,
